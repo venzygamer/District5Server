@@ -19,8 +19,993 @@
 		passive: 4000
 	}
 	pause_game: false
-	progression_mode: "linear"
-	show_lock_icons: false
-	verify_on_load: false
-	version: 13
+        progression_mode: "linear"
+        show_lock_icons: false
+        verify_on_load: false
+        chapters: [
+                {
+                        id: "chapter_settling_in"
+                        title: "Settling In"
+                        icon: "minecraft:campfire"
+                        description: [
+                                "A gentle introduction to surviving and thriving on District 5."
+                        ]
+                        default_quest_shape: "circle"
+                        quests: [
+                                {
+                                        id: "quest_welcome"
+                                        title: "Welcome to District 5"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Crack open your Quest Book to begin your journey."
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "ftbquests:book"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:bread"
+                                                        count: 8
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_gather_logs"
+                                        title: "Gather the Basics"
+                                        x: -20.0d
+                                        y: 20.0d
+                                        description: [
+                                                "Collect a stack of sturdy logs to jump-start construction."
+                                        ]
+                                        dependencies: [
+                                                "quest_welcome"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:oak_log"
+                                                        count: 16
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:torch"
+                                                        count: 16
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_crafting_setup"
+                                        title: "Workstation"
+                                        x: 20.0d
+                                        y: 20.0d
+                                        description: [
+                                                "Every project starts at a crafting table."
+                                        ]
+                                        dependencies: [
+                                                "quest_gather_logs"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:crafting_table"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:chest"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_mining_time"
+                                        title: "Stone Age"
+                                        x: 0.0d
+                                        y: 50.0d
+                                        description: [
+                                                "Upgrade to sturdier tools to delve beneath the surface."
+                                        ]
+                                        dependencies: [
+                                                "quest_crafting_setup"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:stone_pickaxe"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:cooked_beef"
+                                                        count: 8
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_secure_home"
+                                        title: "Warm Shelter"
+                                        x: -30.0d
+                                        y: 80.0d
+                                        description: [
+                                                "Heat things up with a furnace to smelt and cook."
+                                        ]
+                                        dependencies: [
+                                                "quest_mining_time"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:furnace"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:glass"
+                                                        count: 16
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_set_spawn"
+                                        title: "Sweet Dreams"
+                                        x: 30.0d
+                                        y: 80.0d
+                                        description: [
+                                                "Craft a comfy bed to keep your progress safe."
+                                        ]
+                                        dependencies: [
+                                                "quest_mining_time"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:white_bed"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:lantern"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_tool_upgrade"
+                                        title: "Metal Matters"
+                                        x: 0.0d
+                                        y: 110.0d
+                                        description: [
+                                                "Iron tools open the door to advanced machinery."
+                                        ]
+                                        dependencies: [
+                                                "quest_secure_home"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:iron_pickaxe"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:iron_ingot"
+                                                        count: 4
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        id: "chapter_qol_adventures"
+                        title: "Travel & Storage"
+                        icon: "waystones:waystone"
+                        description: [
+                                "Upgrade mobility and storage to explore the world efficiently."
+                        ]
+                        default_quest_shape: "square"
+                        quests: [
+                                {
+                                        id: "quest_backpack"
+                                        title: "Pack Light"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Craft a Sophisticated Backpack to haul your loot."
+                                        ]
+                                        dependencies: [
+                                                "quest_tool_upgrade"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "sophisticatedbackpacks:backpack"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "sophisticatedbackpacks:pickup_upgrade"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_backpack_upgrade"
+                                        title: "Organized Pockets"
+                                        x: -30.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Add some upgrades to keep your new backpack tidy."
+                                        ]
+                                        dependencies: [
+                                                "quest_backpack"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "sophisticatedbackpacks:filter_upgrade"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_waystone"
+                                        title: "Network Hub"
+                                        x: 30.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Place a Waystone to anchor your fast travel network."
+                                        ]
+                                        dependencies: [
+                                                "quest_backpack"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "waystones:waystone"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "waystones:return_scroll"
+                                                        count: 2
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_portable_travel"
+                                        title: "Pocket Portal"
+                                        x: 60.0d
+                                        y: 60.0d
+                                        description: [
+                                                "Craft a Warp Stone for instant travel anywhere."
+                                        ]
+                                        dependencies: [
+                                                "quest_waystone"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "waystones:warp_stone"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:ender_pearl"
+                                                        count: 4
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_biome_tracker"
+                                        title: "Nature's Compass"
+                                        x: -60.0d
+                                        y: 60.0d
+                                        description: [
+                                                "Track down the perfect biome with Nature's Compass."
+                                        ]
+                                        dependencies: [
+                                                "quest_backpack"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "naturescompass:natures_compass"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:spyglass"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_storage_drawers"
+                                        title: "Bulk Storage"
+                                        x: 0.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Build a Drawer to store vast quantities of materials."
+                                        ]
+                                        dependencies: [
+                                                "quest_backpack"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "storagedrawers:oak_full_drawers_2"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "storagedrawers:drawer_key"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        id: "chapter_create_engineering"
+                        title: "Create Engineering"
+                        icon: "create:wrench"
+                        description: [
+                                "Harness kinetic contraptions to automate resource processing."
+                        ]
+                        default_quest_shape: "pentagon"
+                        quests: [
+                                {
+                                        id: "quest_andesite_alloy"
+                                        title: "Alloy Assembly"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Craft Andesite Alloy, the backbone of Create machines."
+                                        ]
+                                        dependencies: [
+                                                "quest_tool_upgrade"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:andesite_alloy"
+                                                        count: 16
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:wrench"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_mechanical_press"
+                                        title: "Pressing Matters"
+                                        x: -40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Set up a Mechanical Press for plates and precision parts."
+                                        ]
+                                        dependencies: [
+                                                "quest_andesite_alloy"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:mechanical_press"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:brass_sheet"
+                                                        count: 8
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_water_wheel"
+                                        title: "Water Power"
+                                        x: 40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Generate passive rotational force with a Water Wheel."
+                                        ]
+                                        dependencies: [
+                                                "quest_andesite_alloy"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:water_wheel"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:large_cogwheel"
+                                                        count: 2
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_encased_fan"
+                                        title: "Wash & Blaze"
+                                        x: -60.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Use an Encased Fan for washing and super-heated recipes."
+                                        ]
+                                        dependencies: [
+                                                "quest_water_wheel"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:encased_fan"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:super_glue"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_brass_age"
+                                        title: "Brass Breakthrough"
+                                        x: 60.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Combine zinc and copper to unlock the Brass Age."
+                                        ]
+                                        dependencies: [
+                                                "quest_encased_fan"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:brass_ingot"
+                                                        count: 16
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:precision_mechanism"
+                                                        count: 2
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_mechanical_crafting"
+                                        title: "Complex Crafting"
+                                        x: 0.0d
+                                        y: 80.0d
+                                        description: [
+                                                "Deploy Mechanical Crafters for advanced components."
+                                        ]
+                                        dependencies: [
+                                                "quest_brass_age"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:mechanical_crafter"
+                                                        count: 9
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:linked_controller"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_sequenced_assembly"
+                                        title: "Sequence Mastery"
+                                        x: 0.0d
+                                        y: 120.0d
+                                        description: [
+                                                "Complete a Sequenced Assembly to create Precision Mechanisms."
+                                        ]
+                                        dependencies: [
+                                                "quest_mechanical_crafting"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:precision_mechanism"
+                                                        count: 5
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "create:deployer"
+                                                        count: 2
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        id: "chapter_culinary"
+                        title: "Farm to Table"
+                        icon: "farmersdelight:cooking_pot"
+                        description: [
+                                "Cultivate, cook, and serve hearty meals for your team."
+                        ]
+                        default_quest_shape: "circle"
+                        quests: [
+                                {
+                                        id: "quest_kitchen_knife"
+                                        title: "Sharp Tools"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Craft a Farmer's Delight knife for food prep."
+                                        ]
+                                        dependencies: [
+                                                "quest_tool_upgrade"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:iron_knife"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "minecraft:wheat_seeds"
+                                                        count: 16
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_rich_soil"
+                                        title: "Healthy Harvest"
+                                        x: -40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Compost organic matter into Rich Soil for crops."
+                                        ]
+                                        dependencies: [
+                                                "quest_kitchen_knife"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:rich_soil"
+                                                        count: 8
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:carrot_crate"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_cooking_pot"
+                                        title: "Community Kitchen"
+                                        x: 40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Set up a Cooking Pot for nourishing meals."
+                                        ]
+                                        dependencies: [
+                                                "quest_kitchen_knife"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:cooking_pot"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:cooked_rice"
+                                                        count: 4
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_stove_setup"
+                                        title: "Kitchen Heat"
+                                        x: 0.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Install a Stove to keep the kitchen running."
+                                        ]
+                                        dependencies: [
+                                                "quest_cooking_pot"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:stove"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:tomato_sauce"
+                                                        count: 4
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_feast_table"
+                                        title: "Dinner is Served"
+                                        x: -40.0d
+                                        y: 100.0d
+                                        description: [
+                                                "Prepare a hearty feast to share with the squad."
+                                        ]
+                                        dependencies: [
+                                                "quest_stove_setup"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:stuffed_pumpkin"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "farmersdelight:hot_cocoa"
+                                                        count: 3
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_rustic_delight"
+                                        title: "Rustic Expansion"
+                                        x: 40.0d
+                                        y: 100.0d
+                                        description: [
+                                                "Mix in Rustic Delight flavors for variety."
+                                        ]
+                                        dependencies: [
+                                                "quest_stove_setup"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "rusticdelight:vegetable_pancakes"
+                                                        count: 2
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "expandeddelight:grilled_cheese"
+                                                        count: 2
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        id: "chapter_powah"
+                        title: "Powering Progress"
+                        icon: "powah:energy_cell_basic"
+                        description: [
+                                "Channel modern energy solutions to fuel massive builds."
+                        ]
+                        default_quest_shape: "hexagon"
+                        quests: [
+                                {
+                                        id: "quest_dielectric_paste"
+                                        title: "Dielectric Basics"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Craft Dielectric Paste to insulate your machines."
+                                        ]
+                                        dependencies: [
+                                                "quest_tool_upgrade"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:dielectric_paste"
+                                                        count: 32
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:capacitor_basic"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_magmatic_power"
+                                        title: "Starter Magmator"
+                                        x: -40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Generate early lava-fueled power with a Magmator."
+                                        ]
+                                        dependencies: [
+                                                "quest_dielectric_paste"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:magmator_starter"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:energy_cell_starter"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_energizing_rod"
+                                        title: "Energizing Setup"
+                                        x: 40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Assemble an Energizing Rod for crafting advanced materials."
+                                        ]
+                                        dependencies: [
+                                                "quest_dielectric_paste"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:energizing_rod_basic"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:energizing_orb"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_uraninite"
+                                        title: "Fuel Reserves"
+                                        x: -60.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Process Uraninite to keep the generators running."
+                                        ]
+                                        dependencies: [
+                                                "quest_magmatic_power"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:uraninite_raw"
+                                                        count: 16
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:charged_snowball"
+                                                        count: 8
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_thermo_generator"
+                                        title: "Thermal Efficiency"
+                                        x: 60.0d
+                                        y: 70.0d
+                                        description: [
+                                                "Deploy a Thermo Generator for passive heat power."
+                                        ]
+                                        dependencies: [
+                                                "quest_energizing_rod"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:thermo_generator_basic"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:battery_basic"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_spirited_upgrade"
+                                        title: "Spirited Systems"
+                                        x: 0.0d
+                                        y: 90.0d
+                                        description: [
+                                                "Energize materials into Spirited crystals for high-end machines."
+                                        ]
+                                        dependencies: [
+                                                "quest_thermo_generator"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:crystal_spirited"
+                                                        count: 4
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "powah:reactor_basic"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        id: "chapter_cobblemon"
+                        title: "Cobblemon Adventures"
+                        icon: "cobblemon:poke_ball"
+                        description: [
+                                "Train, trade, and battle with your favorite partners."
+                        ]
+                        default_quest_shape: "triangle"
+                        quests: [
+                                {
+                                        id: "quest_apricorn"
+                                        title: "Apricorn Harvest"
+                                        x: 0.0d
+                                        y: 0.0d
+                                        description: [
+                                                "Gather Apricorns to craft custom Poké Balls."
+                                        ]
+                                        dependencies: [
+                                                "quest_tool_upgrade"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:black_apricorn"
+                                                        count: 4
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:white_apricorn"
+                                                        count: 4
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_pokeball"
+                                        title: "Reliable Capture"
+                                        x: -40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Craft a supply of standard Poké Balls."
+                                        ]
+                                        dependencies: [
+                                                "quest_apricorn"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:poke_ball"
+                                                        count: 8
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:great_ball"
+                                                        count: 4
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_training_items"
+                                        title: "Battle Prep"
+                                        x: 40.0d
+                                        y: 30.0d
+                                        description: [
+                                                "Equip your team with helpful held items."
+                                        ]
+                                        dependencies: [
+                                                "quest_apricorn"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:assault_vest"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:lucky_egg"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_exp_candy"
+                                        title: "Level Boost"
+                                        x: -40.0d
+                                        y: 80.0d
+                                        description: [
+                                                "Stock up on Exp Candies for quick training sessions."
+                                        ]
+                                        dependencies: [
+                                                "quest_pokeball"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:exp_candy_m"
+                                                        count: 3
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:exp_candy_l"
+                                                }
+                                        ]
+                                },
+                                {
+                                        id: "quest_link_cable"
+                                        title: "Trade Evolution"
+                                        x: 40.0d
+                                        y: 80.0d
+                                        description: [
+                                                "Secure a Link Cable to evolve trade-dependent partners."
+                                        ]
+                                        dependencies: [
+                                                "quest_training_items"
+                                        ]
+                                        tasks: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:link_cable"
+                                                }
+                                        ]
+                                        rewards: [
+                                                {
+                                                        id: "ftbquests:item"
+                                                        item: "cobblemon:exp_candy_xl"
+                                                }
+                                        ]
+                                }
+                        ]
+                }
+        ]
+        version: 13
 }
