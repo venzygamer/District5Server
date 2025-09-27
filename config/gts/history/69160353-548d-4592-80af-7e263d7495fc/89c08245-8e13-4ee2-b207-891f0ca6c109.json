@@ -1,0 +1,82 @@
+{
+  "pokemon": {
+    "BenchedMoves": [],
+    "ScaleModifier": 1.0,
+    "Shiny": false,
+    "Ability": {
+      "AbilityName": "innerfocus",
+      "AbilityIndex": 1
+    },
+    "Gender": "MALE",
+    "IVs": {
+      "cobblemon:defence": 7,
+      "cobblemon:hp": 8,
+      "cobblemon:special_attack": 20,
+      "cobblemon:speed": 29,
+      "cobblemon:attack": 19,
+      "cobblemon:special_defence": 12
+    },
+    "EVs": {
+      "cobblemon:defence": 0,
+      "cobblemon:hp": 0,
+      "cobblemon:special_attack": 0,
+      "cobblemon:speed": 0,
+      "cobblemon:attack": 0,
+      "cobblemon:special_defence": 0
+    },
+    "MoveSet": [
+      {
+        "MoveName": "detect",
+        "MovePP": 5,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "quickattack",
+        "MovePP": 30,
+        "RaisedPPStages": 0
+      }
+    ],
+    "Level": 1,
+    "Experience": 0,
+    "Friendship": 120,
+    "Health": 11,
+    "UUID": [
+      1426913519,
+      462635595,
+      -2080044662,
+      -1333327506
+    ],
+    "Species": "cobblemon:riolu",
+    "FormId": "normal",
+    "TeraType": "cobblemon:fighting",
+    "DmaxLevel": 0,
+    "GmaxFactor": false,
+    "Tradeable": true,
+    "PersistentData": {},
+    "HealingTimer": 60,
+    "Evolutions": {
+      "pending": [],
+      "progress": []
+    },
+    "Nature": "cobblemon:modest",
+    "CaughtBall": "cobblemon:poke_ball",
+    "FaintedTimer": -1,
+    "PokemonOriginalTrainerType": "PLAYER",
+    "PokemonOriginalTrainer": "69160353-548d-4592-80af-7e263d7495fc",
+    "Features": [
+      {
+        "cobblemon:feature_id": "dynamax_level",
+        "dynamax_level": 0
+      }
+    ],
+    "cobblemon:data_version": 1
+  },
+  "version": "2.0",
+  "isPokemon": true,
+  "id": "89c08245-8e13-4ee2-b207-891f0ca6c109",
+  "sellerUuid": "69160353-548d-4592-80af-7e263d7495fc",
+  "sellerName": "xVeNiiMz",
+  "price": 10.0,
+  "soldDate": 1758493057551,
+  "buyerName": "Spoofs7"
+}

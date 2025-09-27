@@ -1,0 +1,103 @@
+{
+  "pokemon": {
+    "BenchedMoves": [],
+    "ScaleModifier": 1.0,
+    "Shiny": false,
+    "Ability": {
+      "AbilityName": "shieldsdown",
+      "AbilityIndex": 0,
+      "AbilityPriority": "LOW"
+    },
+    "Gender": "GENDERLESS",
+    "IVs": {
+      "cobblemon:defence": 13,
+      "cobblemon:hp": 23,
+      "cobblemon:special_attack": 3,
+      "cobblemon:speed": 13,
+      "cobblemon:attack": 12,
+      "cobblemon:special_defence": 31
+    },
+    "EVs": {
+      "cobblemon:defence": 0,
+      "cobblemon:hp": 0,
+      "cobblemon:special_attack": 0,
+      "cobblemon:speed": 0,
+      "cobblemon:attack": 0,
+      "cobblemon:special_defence": 0
+    },
+    "MoveSet": [
+      {
+        "MoveName": "takedown",
+        "MovePP": 19,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "stealthrock",
+        "MovePP": 18,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "selfdestruct",
+        "MovePP": 5,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "ancientpower",
+        "MovePP": 3,
+        "RaisedPPStages": 0
+      }
+    ],
+    "Level": 10,
+    "Experience": 1644,
+    "Friendship": 51,
+    "Health": 1,
+    "UUID": [
+      792263734,
+      324553297,
+      -2079690330,
+      79807022
+    ],
+    "Species": "cobblemon:minior",
+    "FormId": "normal",
+    "TeraType": "cobblemon:rock",
+    "DmaxLevel": 0,
+    "GmaxFactor": false,
+    "Tradeable": true,
+    "PersistentData": {
+      "droploottables:periodic_timer": 6020,
+      "tim_core:spawned_in_bucket": "rare"
+    },
+    "HealingTimer": 26,
+    "Evolutions": {
+      "pending": [],
+      "progress": []
+    },
+    "Nature": "cobblemon:quiet",
+    "CaughtBall": "cobblemon:great_ball",
+    "FaintedTimer": -1,
+    "PokemonOriginalTrainerType": "PLAYER",
+    "PokemonOriginalTrainer": "bacde58f-88ae-40b9-b7d9-a6fe2031499e",
+    "Features": [
+      {
+        "cobblemon:feature_id": "dynamax_level",
+        "dynamax_level": 0
+      },
+      {
+        "cobblemon:feature_id": "core_color",
+        "core_color": "yellow"
+      },
+      {
+        "cobblemon:feature_id": "meteor_shield",
+        "meteor_shield": "core"
+      }
+    ],
+    "cobblemon:data_version": 1
+  },
+  "version": "2.0",
+  "id": "be6c9b58-38fd-499b-b898-09dc842f9261",
+  "sellerUuid": "bacde58f-88ae-40b9-b7d9-a6fe2031499e",
+  "sellerName": "Spoofs7",
+  "price": 60000.0,
+  "endTime": 1758752312052,
+  "isPokemon": true
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "mob": ["cobblemon:pokemon"],
+    "dimension": "district5:normalworld",
+    "when": "onjoin",
+    "result": "deny"
+  },
+  {
+    "mob": ["cobblemon:pokemon"],
+    "dimension": "minecraft:overworld",
+    "result": "default"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "result": "deny"
+  }
+]

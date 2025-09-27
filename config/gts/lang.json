@@ -1,0 +1,111 @@
+{
+  "title": "§3Gts",
+  "itemListingsTitle": "§3Gts - Items",
+  "pokemonListingsTitle": "§3Gts - Pokemon",
+  "expiredListingsTitle": "§3Gts - Expired",
+  "pokemonTitle": "§3Gts - Pokemon",
+  "itemTitle": "§3Gts - Item",
+  "filteredListingsTitle": "§3Gts - %search%",
+  "historyTitle": "§3Gts - History",
+  "manageTitle": "§3Gts - Manage",
+  "purchaseMessageBuyer": "§2You have bought {listing} from {seller}!",
+  "cancelListing": "§6The {listing} listing has been cancelled!",
+  "returnListingSuccess": "§2You have received the {listing} listing!",
+  "returnListingFail": "§cCould not receive the {listing} listing.",
+  "maximumListings": "§cYou can only have a total of {max_listings} listings.",
+  "minimumListingPrice": "§cYour listing must meet the minimum price of {min_price}",
+  "maximumListingPrice": "§cYour listing must be below the maximum price of {max_price}",
+  "listingSuccess": "§2Successfully added your {listing} to GTS!",
+  "listingFail": "§cFailed to add your {listing} to GTS!",
+  "noPokemonInSlot": "§cCould not find any Pokemon in the given slot!",
+  "noItemInHand": "§cCould not find an item in your hand!",
+  "bannedItem": "§c{listing} is banned from GTS!",
+  "bannedPokemon": "§c{listing} is banned from GTS!",
+  "insufficientItems": "§cYou don\u0027t have enough {listing} in your inventory to list this item!",
+  "itemIdNotFound": "§cCould not find an item!",
+  "zeroItemAmount": "§cListing amount can not be zero!",
+  "reloadMessage": "§2Reloaded Configs!",
+  "insufficientFunds": "§cYou do not have enough money to purchase this listing!",
+  "listingBought": "§2Your {listing} has been bought by {buyer}",
+  "newListingBroadcast": "§e{seller} §2has just added a §e{listing} §2to GTS.",
+  "insufficientInventorySpace": "§cYou do not have enough inventory space to receive this listing.",
+  "onlyOnePokemonInParty": "§cYou can not list a Pokemon to GTS if you only have less than 2 Pokemon in your party.",
+  "confirmPurchaseButtonLabel": "§2Confirm Purchase",
+  "cancelPurchaseButtonLabel": "§cCancel Purchase",
+  "removeListingButtonLabel": "§6Remove Listing",
+  "itemListingsButtonLabel": "§9See Item Listings",
+  "pokemonListingsButtonLabel": "§9See Pokemon Listings",
+  "manageListingsButtonLabel": "§dManage Listings",
+  "nextPageButtonLabel": "§7Next Page",
+  "previousPageButtonLabel": "§7Previous Page",
+  "sortByPriceButtonLabel": "§eSort By Price",
+  "sortByNewestButtonLabel": "§3Sort By Newest",
+  "sortByPokemonButtonLabel": "§6Sort By Pokemon",
+  "sortByNameButtonLabel": "§6Sort By Name",
+  "receiveListingButtonLabel": "§2Receive Listing",
+  "relistExpiredButtonLabel": "§9Relist Expired",
+  "expiredListingButtonLabel": "§cExpired Listings",
+  "pokemonBall": "§2Ball: ",
+  "itemListingsButtonItem": {
+    "id": "cobblemon:assault_vest",
+    "count": 1
+  },
+  "pokemonListingsButtonItem": {
+    "id": "cobblemon:poke_ball",
+    "count": 1
+  },
+  "manageListingsButtonItem": {
+    "id": "cobblemon:sachet",
+    "count": 1
+  },
+  "expiredListingsButtonItem": {
+    "id": "cobblemon:link_cable",
+    "count": 1
+  },
+  "nextPageButtonItems": {
+    "id": "minecraft:arrow",
+    "count": 1
+  },
+  "previousPageButtonItems": {
+    "id": "cobblemon:poison_barb",
+    "count": 1
+  },
+  "fillerItem": {
+    "id": "minecraft:white_stained_glass_pane",
+    "count": 1
+  },
+  "purchaseButtonItem": {
+    "id": "minecraft:green_stained_glass_pane",
+    "count": 1
+  },
+  "cancelButtonItem": {
+    "id": "minecraft:red_stained_glass_pane",
+    "count": 1
+  },
+  "removeListingButtonItem": {
+    "id": "minecraft:orange_stained_glass_pane",
+    "count": 1
+  },
+  "sortByPriceButtonItem": {
+    "id": "minecraft:gold_nugget",
+    "count": 1
+  },
+  "sortByNewestButtonItem": {
+    "id": "minecraft:clock",
+    "count": 1
+  },
+  "sortByNameButtonItem": {
+    "id": "minecraft:oak_sign",
+    "count": 1
+  },
+  "relistExpiredButtonItem": {
+    "id": "cobblemon:rare_candy",
+    "count": 1
+  },
+  "seller": "§9Seller: §b",
+  "price": "§9Price: §b",
+  "remainingTime": "§9Time Remaining: §b",
+  "sold_date": "§9Sold Date: §b",
+  "buyer": "§9Buyer: §b",
+  "version": "2.6"
+}

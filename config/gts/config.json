@@ -1,0 +1,60 @@
+{
+  "enablePokemonSales": true,
+  "enableItemSales": true,
+  "enableAsyncSearches": false,
+  "broadcastListings": true,
+  "enablePermissionNodes": true,
+  "maxListingsPerPlayer": 8,
+  "listingDuration": 72,
+  "discord": {
+    "useWebhooks": false,
+    "url": "WEBHOOK_URL"
+  },
+  "showBreedable": false,
+  "taxRate": 0.1,
+  "minPrice1IV": 10000.0,
+  "minPrice2IV": 20000.0,
+  "minPrice3IV": 30000.0,
+  "minPrice4IV": 40000.0,
+  "minPrice5IV": 50000.0,
+  "minPrice6IV": 60000.0,
+  "minPriceHA": 50000.0,
+  "minPriceLegendary": 50000.0,
+  "minPriceUltrabeast": 30000.0,
+  "maximumPrice": 1000000.0,
+  "customItemPrices": [
+    {
+      "item": {
+        "id": "cobblemon:assault_vest",
+        "count": 1
+      },
+      "price": 10000.0
+    }
+  ],
+  "bannedItems": [
+    {
+      "id": "cobblemon:lucky_egg",
+      "count": 1
+    }
+  ],
+  "customPokemonPrices": [
+    {
+      "pokemon": {
+        "species": "blaziken",
+        "form": "",
+        "ability": "speedboost",
+        "gender": "male"
+      },
+      "price": 10000.0
+    }
+  ],
+  "bannedPokemon": [
+    {
+      "species": "blaziken",
+      "form": "",
+      "ability": "speedboost",
+      "gender": "male"
+    }
+  ],
+  "version": "2.2"
+}

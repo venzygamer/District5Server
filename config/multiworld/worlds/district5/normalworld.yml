@@ -1,0 +1,9 @@
+namespace: district5
+path: normalworld
+environment: NORMAL
+seed: 5353050353
+custom_generator: NORMAL
+spawnpos: -115998476230592
+difficulty: HARD
+gamerules: 
+gamerule_playersSleepingPercentage: 25
